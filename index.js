@@ -25,8 +25,8 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 client.connect(err => {
-    const watchCollection = client.db('watchMaster').collection('watches');
-    const ordersCollection = client.db('watchMaster').collection('orders');
+    const watchCollection = client.db(`${process.env.DB_NAME}`).collection('watches');
+    const ordersCollection = client.db(`${process.env.DB_NAME}`).collection('orders');
     console.log('Database connected successfully');
 
     app.get('/watches', (req, res) => {
