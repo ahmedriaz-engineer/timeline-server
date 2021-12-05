@@ -16,7 +16,8 @@
     "express": "^4.17.1",
     "firebase-admin": "^10.0.0",
     "mongodb": "^3.6.9",
-    "nodemon": "^2.0.9"
+    "nodemon": "^2.0.9",
+    "npm": "^8.2.0"
   },
   "description": ""
 }
