@@ -17,8 +17,7 @@ var admin = require("firebase-admin");
 var serviceAccount = require("./configs/timeline-projects-firebase-adminsdk-1uq4e-788a680909.json");
 
 admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://timeline.firebaseio.com"
+    credential: admin.credential.cert(serviceAccount)
 
 });
 
